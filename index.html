@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Feedback System</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+         <link rel="stylesheet" href="{{ url_for('static', filename='css/demo.css') }}">
+
+
+</head>
+<body>
+    {% include 'nav.html' %}
+
+<!--    &lt;!&ndash; <div class="container">-->
+<!--        <h1>Welcome to Event Feedback Management System</h1>-->
+<!--        <p>-->
+<!--            This website allows participants to share their feedback after attending events.-->
+<!--            The collected feedback helps organizers improve future events and understand-->
+<!--            participant experiences better.-->
+<!--        </p>-->
+<!--    </div> &ndash;&gt;-->
+
+
+<section class="full">
+    <div class="content">
+    <h1>🎉 Welcome to Event Feedback Management System</h1>
+
+    <p>
+        Your opinion matters! After attending an event, you can share your
+        <span class="highlight">experience, rating, and suggestions</span>
+        to help organizers improve future events.
+    </p>
+
+
+    <p>
+        🚀 Explore upcoming events, attend them, and don’t forget to leave
+        your valuable feedback!
+    </p>
+
+     </div>
+
+    <a href="{{ url_for('feedback') }}" class="feedback-btn">Give Feedback</a>
+</section>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

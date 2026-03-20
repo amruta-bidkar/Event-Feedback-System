@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Feedback System</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+         <link rel="stylesheet" href="{{ url_for('static', filename='css/demo.css') }}">
+
+
+</head>
+<body>
+    {% include 'nav.html' %}
+<table class="table table-bordered" >
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Event_name</th>
+        <th>Rating</th>
+        <th>Comments</th>
+        <th>Action</th>
+        <th>Aaction</th>
+    </tr>
+
+     {% for i in data %}
+    <tr>
+
+        <td>{{i[0]}}</td>
+        <td>{{i[1]}}</td>
+        <td>{{i[2]}}</td>
+        <td>{{i[3]}}</td>
+        <td>{{i[4]}}</td>
+
+        <td><a href="/deletefeedback/{{i[0]}}" class="btn btn-success">Delete</a></td>
+        <td><a href="/update/{{i[0]}}" class="btn btn-danger">Update</a></td>        
+        
+    </tr>
+    {% endfor %}
+</table>
+
+
+</body>
+</html>

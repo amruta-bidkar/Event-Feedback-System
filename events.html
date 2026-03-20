@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/demo.css') }}">
+</head>
+
+<body>
+
+    {% include 'nav.html' %}
+
+    <section class="event">
+
+
+    <!-- <div class="container">
+        <h1>Upcoming Events</h1>
+
+        <ul class="event-list">
+            <li>Tech Workshop – 10 March 2026</li>
+            <li>Web Development Seminar – 15 March 2026</li>
+            <li>AI Awareness Program – 20 March 2026</li>
+            <li>Cultural Fest – 25 March 2026</li>
+        </ul>
+    </div> -->
+
+
+
+    <div class="e-container">
+    <h1>🎉 Upcoming Events</h1>
+
+    <p class="event-intro">
+        Get ready to participate in our exciting upcoming events! 
+        These programs are designed to enhance your knowledge, 
+        creativity, and technical skills. Join us and be a part 
+        of these engaging experiences.
+    </p>
+
+    <ul class="event-list">
+        <li>💻 <strong>Tech Workshop</strong> – 10 March 2026</li>
+        <li>🌐 <strong>Web Development Seminar</strong> – 15 March 2026</li>
+        <li>🤖 <strong>AI Awareness Program</strong> – 20 March 2026</li>
+        <li>🎭 <strong>Cultural Fest</strong> – 25 March 2026</li>
+    </ul>
+
+    <p class="event-note">
+        Don't miss these opportunities to learn, network, and have fun. 
+        After attending the event, make sure to share your valuable feedback!
+    </p>
+</div>
+
+
+    </section>
+</body>
+</html>
